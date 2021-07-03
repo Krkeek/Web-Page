@@ -1,0 +1,38 @@
+    #the_header {
+        font-weight: bold;
+    }
+    
+    #product_form {
+        display: flex;
+        min-height: 83vh;
+        width: 100%;
+    }
+    
+    .form-row {
+        margin-bottom: 10px !important;
+        min-width: 30vw !important;
+    }
+    
+    .prodContainer {
+        margin: 10px;
+        background-color: #f8f9fa;
+        border-radius: 3px;
+        max-height: 170px !important;
+        max-width: 235px !important;
+        min-height: 170px !important;
+        min-width: 220px !important;
+        border: 1px solid black;
+    }
+    
+    .prodCol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    #product_list_container {
+        display: flex;
+        min-height: 83vh;
+        width: 100%;
+    }
