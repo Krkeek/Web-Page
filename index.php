@@ -22,28 +22,74 @@ include 'assets/backend/connection.php';
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav Font">
                     <li class="nav-item">
-                        <h2 id="the_header">Product List</h2>
+                        <h2 id="the_header">Product Add</h2>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <a href="addproduct.php" class="btn btn-primary">ADD</a>
-                        <a href="#" id="delete-product-btn" class="btn btn-danger">MASS DELETE</a>
+                        <button type="button" name='saveBtn' class="btn btn-success">Save</button>
+                        <a href="index.php" class="btn btn-danger">Cancel</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div id="product_list_container" class="d-flex align-content-start flex-wrap">
+    <form id="product_form" action="addproduct.php">
+        <section class="form ml-3 mt-2">
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="sku">SKU </label>
+
+                </div>
+                <div class="col-8">
+                    <input id="sku" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="name">Name </label>
+                </div>
+                <div class="col-8">
+                    <input id="name" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="price">Price ($) </label>
+
+                </div>
+                <div class="col-8">
+                    <input id="price" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="productType">Type switcher </label>
+
+                </div>
+                <div class="col-8">
+                    <select id="productType" class="form-select" aria-label="Default select example">
+                        <option value="#">Type switcher</option>
+                        <option id="DVD" value="DVD">DVD</option>
+                        <option id="Book" value="Book">Book</option>
+                        <option id="Furniture" value="Furniture">Furniture</option>
+                    </select>
+                </div>
+            </div>
+            <div id="special_attribute_row">
+
+            </div>
+        </section>
+
+    </form>
 
 
-
-    </div>
     <footer class="bg-light text-center text-lg-start navbar-fixed-bottom">
         <div class="text-center p-3 border-top">
             Scandiweb Test assignment
         </div>
     </footer>
+
 
 
 
